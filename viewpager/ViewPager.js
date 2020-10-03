@@ -94,7 +94,7 @@ export default class ViewPager extends Component {
             showsHorizontalScrollIndicator: false,
             showsVerticalScrollIndicator: false,
             children: this._childrenWithOverridenStyle(),
-            contentOffset: {x: this.state.width * initialPage, y: 0},
+            //contentOffset: {x: this.state.width * initialPage, y: 0},
             decelerationRate: 0.9,
             onScroll: needMonitorScroll ? this._onScrollOnIOS : null,
             scrollEventThrottle: needMonitorScroll ? ( this.props.onPageScroll ? 8 : 1) : 0
